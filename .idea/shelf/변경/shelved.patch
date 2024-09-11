@@ -1,0 +1,204 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1726033224995)
++++ b/src/Main.java	(date 1726033224995)
+@@ -0,0 +1,5 @@
++public class Main {
++    public static void main(String[] args) {
++        System.out.println("Hello world!");
++    }
++}
+\ No newline at end of file
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1726033224921)
++++ b/.gitignore	(date 1726033224921)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1726034749855)
++++ b/.idea/.gitignore	(date 1726034749855)
+@@ -0,0 +1,8 @@
++# 디폴트 무시된 파일
++/shelf/
++/workspace.xml
++# 에디터 기반 HTTP 클라이언트 요청
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: src/Hello.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Hello.java b/src/Hello.java
+new file mode 100644
+--- /dev/null	(date 1726037077189)
++++ b/src/Hello.java	(date 1726037077189)
+@@ -0,0 +1,16 @@
++public class Hello {
++	public static void main(String[] args) {
++		int aa = 10;
++		double bb = 36.5;
++		boolean cc = true;
++		char dd = 'e';
++		String ee = "이거아니궈던";
++
++		System.out.println(aa);
++		System.out.println(bb);
++		System.out.println(cc);
++		System.out.println(dd);
++		System.out.println(ee);
++
++	}
++}
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1726034662199)
++++ b/.idea/modules.xml	(date 1726034662199)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: test.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test.iml b/test.iml
+new file mode 100644
+--- /dev/null	(date 1726034662197)
++++ b/test.iml	(date 1726034662197)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: src/Check.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Check.java b/src/Check.java
+new file mode 100644
+--- /dev/null	(date 1726038969121)
++++ b/src/Check.java	(date 1726038969121)
+@@ -0,0 +1,18 @@
++public class Check {
++    public static void main(String[] args) {
++        int x = 10; // 기본형
++        int y = x; // 값 복사
++        y = 20; // y 값을 변경
++
++        int[] arr1 = {1, 2, 3}; // 참조형
++        int[] arr2 = arr1; // 주소 복사
++        arr2[0] = 100; // arr2를 통한 값 변경
++
++        arr1[1] = 200;
++
++        System.out.println("x: " + x); // x는 10으로 유지
++        System.out.println("y: " + y); // y는 20으로 변경
++        System.out.println("arr1[0]: " + arr1[0]); // arr1[0]도 100으로 변경 (arr1과 arr2는 같은 배열을 참조
++        System.out.println("arr2[1]: " + arr2[1]);
++    }
++}
+Index: src/Systemy.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Systemy.java b/src/Systemy.java
+new file mode 100644
+--- /dev/null	(date 1726039566163)
++++ b/src/Systemy.java	(date 1726039566163)
+@@ -0,0 +1,7 @@
++public class Systemy {
++    public static void main(String[] args) {
++        char letter = 'A';
++        int asciiValue = letter;
++        System.out.println(letter+ " is : " +asciiValue);
++    }
++}
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1726034662259)
++++ b/.idea/misc.xml	(date 1726034662259)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
